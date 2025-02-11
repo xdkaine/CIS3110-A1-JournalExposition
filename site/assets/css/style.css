@@ -1,0 +1,45 @@
+body {
+    padding-top: 56px;
+    padding: 1rem 1rem 1rem 1rem;
+
+}
+
+.jumbotron {
+    background-color: #f8f9fa;
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.card {
+    margin: 15px 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-custom {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+}
+
+.carousel-item {
+    height: 50%;
+    width: 50%;
+    opacity: 80%;
+}
