@@ -1,0 +1,473 @@
+/* BananaCorp International - World's #1 Banana Import/Export Specialists */
+
+/* Custom banana-themed color classes */
+:root {
+    --banana-yellow: #FFDA61;
+    --banana-dark: #FFC107;
+    --banana-light: #FFF9C4;
+    --banana-accent: #FFECB3;
+    --leaf-green: #689F38;
+    --leaf-light: #8BC34A;
+    --chocolate: #795548;
+    --cream: #F5F5DC;
+}
+
+/* Base styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: var(--cream);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><path fill="%23FFECB320" d="M30,10 Q45,15 50,30 Q45,45 30,50 Q15,45 10,30 Q15,15 30,10 Z"/></svg>');
+}
+
+/* Custom banana styling */
+.bg-banana {
+    background: linear-gradient(135deg, var(--banana-yellow) 0%, var(--banana-light) 50%, var(--banana-accent) 100%);
+    color: var(--chocolate);
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-banana::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -50%;
+    left: -50%;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60"><path fill="%23FFFFFF15" d="M30,5 Q60,0 90,5 Q115,25 100,40 Q80,55 60,55 Q40,55 20,40 Q5,25 30,5 Z"/></svg>') repeat;
+    opacity: 0.2;
+    animation: drift 60s infinite linear;
+    pointer-events: none;
+}
+
+@keyframes drift {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.banana-text {
+    color: var(--banana-dark);
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Navbar customization */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.5px;
+}
+
+.navbar {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff; /* Solid white on hover/focus */
+}
+
+.nav-link {
+    position: relative;
+    font-weight: 500;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 5px;
+    left: 50%;
+    background-color: var(--banana-yellow);
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 70%;
+}
+
+/* Cards styling */
+.card {
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.card-img-top {
+    transition: transform 0.8s ease;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    position: relative;
+    z-index: 1;
+    background: white;
+}
+
+.card-title {
+    font-weight: 600;
+    color: var(--chocolate);
+    margin-bottom: 0.75rem;
+}
+
+.card .border-warning {
+    border-color: var(--banana-yellow) !important;
+    border-width: 2px;
+}
+
+/* Button styling */
+.btn {
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-warning {
+    background: linear-gradient(45deg, var(--banana-dark), var(--banana-yellow));
+    border: none;
+    color: var(--chocolate);
+}
+
+.btn-warning:hover {
+    background: linear-gradient(45deg, var(--banana-yellow), var(--banana-dark));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-success {
+    border-color: var(--leaf-green);
+    color: var(--leaf-green);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--leaf-green);
+    border-color: var(--leaf-green);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer styling */
+footer {
+    background: linear-gradient(to right, var(--leaf-green), var(--leaf-light));
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+footer a:hover {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+footer a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--banana-yellow);
+    transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+    width: 100%;
+}
+
+/* Product sections */
+.product-section {
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-left: none;
+    position: relative;
+}
+
+.product-section::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: linear-gradient(to bottom, var(--banana-dark), var(--banana-yellow));
+    border-radius: 5px 0 0 5px;
+}
+
+.product-section:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+.product-section img {
+    transition: transform 0.6s ease;
+    object-fit: cover;
+    height: 300px;
+}
+
+.product-section:hover img {
+    transform: scale(1.05);
+}
+
+/* Gallery page */
+.btn-group .btn {
+    transition: all 0.3s ease;
+}
+
+.btn-group .btn.active {
+    background-color: var(--leaf-green);
+    color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .badge {
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+
+.card:hover .badge {
+    transform: scale(1.1);
+}
+
+/* Contact page */
+.form-control {
+    border-radius: 8px;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--banana-yellow);
+    box-shadow: 0 0 0 0.25rem rgba(255, 215, 0, 0.25);
+}
+
+/* Animation for jumbotron */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bg-banana h1 {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.1s;
+    opacity: 0;
+}
+
+.bg-banana p {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+}
+
+.bg-banana .btn {
+    animation: fadeInUp 0.8s ease-out forwards;
+    animation-delay: 0.5s;
+    opacity: 0;
+}
+
+/* Custom breakpoint adjustments */
+@media (max-width: 767.98px) {
+    .display-3 {
+        font-size: 2.3rem;
+    }
+    
+    .display-4 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Scroll animation */
+@media (min-width: 992px) {
+    .reveal-on-scroll {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+
+    .reveal-on-scroll.revealed {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Banana animations */
+@keyframes peel-slip {
+    0% { transform: rotate(0deg) translateX(0); }
+    15% { transform: rotate(10deg) translateX(5px); }
+    30% { transform: rotate(-8deg) translateX(-3px); }
+    45% { transform: rotate(6deg) translateX(2px); }
+    60% { transform: rotate(-4deg) translateX(-1px); }
+    75% { transform: rotate(2deg) translateX(1px); }
+    100% { transform: rotate(0deg) translateX(0); }
+}
+
+.banana-slip {
+    display: inline-block;
+    animation: peel-slip 1s ease-in-out;
+}
+
+.banana-img {
+    transition: transform 0.3s ease;
+}
+
+.banana-img:hover {
+    transform: scale(1.1) rotate(5deg);
+    cursor: pointer;
+}
+
+.banana-bunch {
+    position: relative;
+}
+
+.banana-bunch::after {
+    content: "🍌";
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: -10px;
+    right: -10px;
+    transform: rotate(-15deg);
+    animation: float 3s infinite ease-in-out;
+}
+
+@keyframes float {
+    0% { transform: translateY(0) rotate(-15deg); }
+    50% { transform: translateY(-10px) rotate(-5deg); }
+    100% { transform: translateY(0) rotate(-15deg); }
+}
+
+.banana-fact {
+    background-color: var(--banana-light);
+    border-left: 4px solid var(--banana-yellow);
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+}
+
+.banana-fact::before {
+    content: "🍌 Fun Fact:";
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.banana-quote {
+    font-style: italic;
+    position: relative;
+    padding: 20px;
+    background: var(--cream);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.banana-quote::before,
+.banana-quote::after {
+    content: '"';
+    font-family: Georgia, serif;
+    font-size: 50px;
+    color: var(--banana-yellow);
+    position: absolute;
+    height: 30px;
+}
+
+.banana-quote::before {
+    top: 0;
+    left: 5px;
+}
+
+.banana-quote::after {
+    bottom: -15px;
+    right: 5px;
+}
+
+/* Product Showcase */
+.banana-product {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.banana-product:hover {
+    transform: scale(1.03) rotate(1deg);
+}
+
+.banana-price-tag {
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background: var(--banana-yellow);
+    color: var(--chocolate);
+    padding: 5px 40px;
+    font-weight: bold;
+    transform: rotate(45deg);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.banana-spin {
+    display: inline-block;
+    animation: spin 10s linear infinite;
+    transform-origin: center;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.banana-dance {
+    display: inline-block;
+    animation: dance 2s infinite alternate;
+}
+
+@keyframes dance {
+    0% { transform: translateY(0) rotate(0); }
+    25% { transform: translateY(-5px) rotate(-5deg); }
+    50% { transform: translateY(0) rotate(0); }
+    75% { transform: translateY(-5px) rotate(5deg); }
+    100% { transform: translateY(0) rotate(0); }
+}

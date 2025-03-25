@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Banana Republic Farms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="https://www.collinsdictionary.com/images/full/banana_158989607.jpg" alt="Banana Logo" width="30" height="30" class="d-inline-block align-top me-2">
+                Banana Republic Farms
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="bg-banana text-dark py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Welcome to the Banana Gallery – It’s a-Peel-ing!</h1>
+            <p class="lead">Take a virtual swing around our farms, products, and our delightfully nutty team.</p>
+        </div>
+    </div>
+
+    <!-- Gallery Intro -->
+    <div class="container mt-5">
+        <div class="row mb-4">
+            <div class="col-12">
+                <p class="lead text-center reveal-on-scroll">At Banana Republic Farms, we laugh as hard as we grow bananas – browse our gallery for a taste of the fun behind the fruit!</p>
+            </div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="row mb-4">
+            <div class="col-12 text-center reveal-on-scroll" data-delay="100">
+                <div class="btn-group" role="group" aria-label="Gallery filter">
+                    <button type="button" class="btn btn-outline-success active" id="all-filter">All</button>
+                    <button type="button" class="btn btn-outline-success" id="farms-filter">Farms</button>
+                    <button type="button" class="btn btn-outline-success" id="products-filter">Products</button>
+                    <button type="button" class="btn btn-outline-success" id="team-filter">Our Team</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gallery Cards -->
+        <div class="row">
+            <!-- Farm Images -->
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="100">
+                <div class="card h-100 border-success">
+                    <img src="https://media.istockphoto.com/id/1409144759/photo/aerial-view-of-a-banana-plantation-in-tenerife-canary-islands.jpg?s=612x612&w=0&k=20&c=Xdt1cqCjKj9Nk-Jt_KZDjKxoxjR_jGgc9cLwGUWybwI=" class="card-img-top" alt="Banana Plantation">
+                    <div class="card-body">
+                        <h5 class="card-title">Main Plantation</h5>
+                        <p class="card-text">Our largest banana plantation spans over 500 acres of fertile tropical land.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-success">Farm</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="200">
+                <div class="card h-100 border-success">
+                    <img src="https://www.freshplaza.com/remote.axd?https://www.freshplaza.com/images/article/2023/0922/Banana_I.jpg?preset=W1200" class="card-img-top" alt="Organic Farming">
+                    <div class="card-body">
+                        <h5 class="card-title">Organic Farming</h5>
+                        <p class="card-text">Our organic farming methods ensure the highest quality bananas without harmful pesticides.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-success">Farm</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="300">
+                <div class="card h-100 border-success">
+                    <img src="https://www.pro-mix.com/media/3489/bananas-in-greenhouse.jpg?anchor=center&mode=crop&width=800&height=600" class="card-img-top" alt="Greenhouse">
+                    <div class="card-body">
+                        <h5 class="card-title">Greenhouse Cultivation</h5>
+                        <p class="card-text">Our climate-controlled greenhouses allow us to grow specialty banana varieties year-round.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-success">Farm</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Images -->
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="200">
+                <div class="card h-100 border-warning">
+                    <img src="https://www.allrecipes.com/thmb/PQYQJ5U-lqU-zJjbxk9tC5Gg4Wk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20141_sliced-bananas_Photo-by-Meredith-94228138b7c541c985b709140262919b.jpg" class="card-img-top" alt="Banana Variety Pack">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana Variety Pack</h5>
+                        <p class="card-text">Our premium variety pack includes red bananas, baby bananas, and traditional Cavendish bananas.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-warning text-dark">Product</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="300">
+                <div class="card h-100 border-warning">
+                    <img src="https://www.simplyrecipes.com/thmb/aosoJHnEKgk9qYtQW-4BvjPqOO8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-2-65373a79d1dd4a95b796e57e68ca833a.jpg" class="card-img-top" alt="Banana Smoothie Mix">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana Smoothie Mix</h5>
+                        <p class="card-text">Our ready-to-blend smoothie mix combines freeze-dried bananas with other nutritious ingredients.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-warning text-dark">Product</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="400">
+                <div class="card h-100 border-warning">
+                    <img src="https://m.media-amazon.com/images/I/61oPLffWIjL._AC_SY450_.jpg" class="card-img-top" alt="Banana Gift Basket">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana Gift Basket</h5>
+                        <p class="card-text">Our curated gift baskets contain a selection of our finest banana products and merchandise.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-warning text-dark">Product</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Images -->
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="300">
+                <div class="card h-100 border-primary">
+                    <img src="https://media.istockphoto.com/id/1368513474/photo/happy-asian-woman-farmer-harvesting-banana-in-organic-farm.jpg?s=612x612&w=0&k=20&c=kmw_jJ9xFoEFmjx-K5UKVjG_sS-FnRj9K1WDsK5C-vo=" class="card-img-top" alt="Farm Workers">
+                    <div class="card-body">
+                        <h5 class="card-title">Our Farm Team</h5>
+                        <p class="card-text">Our expert farm workers ensure each banana is grown and harvested with care and precision.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-primary">Team</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="400">
+                <div class="card h-100 border-primary">
+                    <img src="https://media.istockphoto.com/id/182144316/photo/inspector-examining-bananas.jpg?s=612x612&w=0&k=20&c=jJpzJuE8aEvODOj9fkMmUSO_JvrjWwzkxGGMYRGj6_Y=" class="card-img-top" alt="Quality Control">
+                    <div class="card-body">
+                        <h5 class="card-title">Quality Control</h5>
+                        <p class="card-text">Our quality control team inspects every batch of bananas to ensure they meet our high standards.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-primary">Team</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 col-lg-4 mb-4 reveal-on-scroll" data-delay="500">
+                <div class="card h-100 border-primary">
+                    <img src="https://media.istockphoto.com/id/1398371238/photo/scientists-team-analyzing-and-studying-agricultural-crops-in-laboratory.jpg?s=612x612&w=0&k=20&c=a9pwJqQt9wS6qK6jKoxUnjWImEwN-L0CpA9KdlYJuws=" class="card-img-top" alt="Research Team">
+                    <div class="card-body">
+                        <h5 class="card-title">Research & Development</h5>
+                        <p class="card-text">Our R&D team is constantly working on new banana varieties and innovative banana products.</p>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <span class="badge bg-primary">Team</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>Banana Republic Farms</h5>
+                    <p>Providing premium banana products worldwide since 1985.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a class="text-white" href="index.html">Home</a></li>
+                        <li><a class="text-white" href="products.html">Products</a></li>
+                        <li><a class="text-white" href="gallery.html">Gallery</a></li>
+                        <li><a class="text-white" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Us</h5>
+                    <address class="mb-0">
+                        <p>123 Banana Lane<br>Tropical City, TC 98765</p>
+                        <p>Phone: (555) 123-4567<br>Email: info@bananarepublicfarms.com</p>
+                    </address>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2023 Banana Republic Farms. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple gallery filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.btn-group button');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Add filter implementation here
+                });
+            });
+            
+            // Animation for scroll reveal
+            const revealElements = document.querySelectorAll('.reveal-on-scroll');
+            
+            function checkScroll() {
+                let windowHeight = window.innerHeight;
+                revealElements.forEach(element => {
+                    let elementTop = element.getBoundingClientRect().top;
+                    let elementVisible = 150;
+                    
+                    if (elementTop < windowHeight - elementVisible) {
+                        // Get delay if any
+                        const delay = element.dataset.delay || 0;
+                        setTimeout(() => {
+                            element.classList.add('revealed');
+                        }, delay);
+                    }
+                });
+            }
+            
+            window.addEventListener('scroll', checkScroll);
+            // Check on initial load
+            checkScroll();
+        });
+    </script>
+</body>
+</html>
