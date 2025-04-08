@@ -16,7 +16,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-a87c-51f7-94ed-d836dfbc09d0/raw?se=2025-04-08T01%3A04%3A10Z&sp=r&sv=2024-08-04&sr=b&scid=252ff7c7-46dc-56aa-b5db-9775a8b15f38&skoid=f0c3f613-0f9b-4a8a-a29a-c1a910343ad7&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-07T06%3A34%3A03Z&ske=2025-04-08T06%3A34%3A03Z&sks=b&skv=2024-08-04&sig=P11ProdAQL9Hy5HU8Epjik1pjQC%2Bu2MBheG0X2v7GQo%3D" alt="Banana Republic Farms Logo" width="45" height="45" class="d-inline-block align-middle" style="background-color: rgba(255,255,255,0.2); border-radius: 50%; padding: 3px; box-shadow: 0 0 5px rgba(0,0,0,0.2);">
+                <img src="logo.png" alt="Banana Republic Farms Logo" width="45" height="45" class="d-inline-block align-middle" style="background-color: rgba(255,255,255,0.2); border-radius: 50%; padding: 3px; box-shadow: 0 0 5px rgba(0,0,0,0.2);">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -41,11 +41,11 @@
     </nav>
 
     <!-- Jumbotron/Hero Section -->
-    <div class="p-5 mb-4 bg-banana text-dark">
-        <div class="container py-5">
+    <div class="jumbotron p-5 mb-4 bg-light rounded-3 bg-banana text-dark">
+        <div class="container-fluid py-5">
             <h1 class="display-3 fw-bold">Peel the Difference: Quality That's Bananas!</h1>
-            <p class="fs-4">Our bananas are so fresh they practically tell jokes – slip into happiness with every bite!</p>
-            <a class="btn btn-warning btn-lg" href="products.html">Peel Into Our Products</a>
+            <p class="col-md-8 fs-4">Our bananas are so fresh they practically tell jokes – slip into happiness with every bite!</p>
+            <a class="btn btn-warning btn-lg shadow-sm" href="products.html">Peel Into Our Products</a>
         </div>
     </div>
 
@@ -53,45 +53,54 @@
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-6 reveal-on-scroll">
-                <h2>Welcome to Banana Republic Farms</h2>
-                <p class="lead">Since 1985 we’ve been growing bananas with a side of humor – we promise our fruit will crack you up (but please don’t slip!).</p>
+                <h2 class="fw-bold">Welcome to Banana Republic Farms</h2>
+                <p class="lead">Since 1985 we've been growing bananas with a side of humor – we promise our fruit will crack you up (but please don't slip!).</p>
                 <p>Our family-owned plantations span across tropical regions, producing over 10 varieties of premium bananas. From farm to table, we ensure the highest quality in every bunch.</p>
-                <a href="about.html" class="btn btn-outline-success">Learn More About Us</a>
+                <a href="about.html" class="btn btn-outline-success shadow-sm">Learn More About Us</a>
             </div>
             <div class="col-lg-6 reveal-on-scroll" data-delay="200">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Bananal_REFON.jpg" class="img-fluid rounded" alt="Banana Plantation">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Bananal_REFON.jpg" class="img-fluid rounded shadow-sm" alt="Banana Plantation">
             </div>
         </div>
         
         <hr class="my-5">
         
         <!-- Featured Products Section -->
-        <h2 class="text-center mb-4 reveal-on-scroll">Featured Un-peel-ievable Products</h2>
+        <h2 class="text-center mb-4 fw-bold reveal-on-scroll">Featured Un-peel-ievable Products</h2>
         <div class="row">
             <div class="col-md-4 mb-4 reveal-on-scroll" data-delay="100">
-                <div class="card h-100 border-warning">
-                    <img src="https://i5.walmartimages.com/seo/Fresh-Banana-Each_5939a6fa-a0d6-431c-88c6-b4f21608e4be.f7cd0cc487761d74c69b7731493c1581.jpeg" class="card-img-top" alt="Fresh Bananas">
+                <div class="card h-100 border-warning shadow-sm rounded-3">
+                    <img src="https://i5.walmartimages.com/seo/Fresh-Banana-Each_5939a6fa-a0d6-431c-88c6-b4f21608e4be.f7cd0cc487761d74c69b7731493c1581.jpeg" class="card-img-top rounded-top" alt="Fresh Bananas">
                     <div class="card-body">
-                        <h5 class="card-title">Fresh Bananas</h5>
+                        <h5 class="card-title fw-bold">Fresh Bananas</h5>
                         <p class="card-text">Our signature organic bananas, picked at peak ripeness.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="products.html" class="btn btn-sm btn-outline-warning">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4 reveal-on-scroll" data-delay="200">
-                <div class="card h-100 border-warning">
-                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSqFqEV78fZqRmlucPjyFV8UX9xOtYw58Ab0snbua45ExOxa5LNu9WrwdWzENPShL_MaohHWuMhI9dWv56bNxojzWsJDjbvyux0AM2cKbcGCYvAyQ1NYXY" class="card-img-top" alt="Banana Chips">
+                <div class="card h-100 border-warning shadow-sm rounded-3">
+                    <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSqFqEV78fZqRmlucPjyFV8UX9xOtYw58Ab0snbua45ExOxa5LNu9WrwdWzENPShL_MaohHWuMhI9dWv56bNxojzWsJDjbvyux0AM2cKbcGCYvAyQ1NYXY" class="card-img-top rounded-top" alt="Banana Chips">
                     <div class="card-body">
-                        <h5 class="card-title">Banana Chips</h5>
+                        <h5 class="card-title fw-bold">Banana Chips</h5>
                         <p class="card-text">Crispy, lightly salted banana chips, perfect for snacking.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="products.html" class="btn btn-sm btn-outline-warning">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4 reveal-on-scroll" data-delay="300">
-                <div class="card h-100 border-warning">
-                    <img src="https://www.simplyrecipes.com/thmb/6NhQKyjhBOmu4y0RXXHipugv0Q8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-66837beab63c495292d89743c6767171.jpg" class="card-img-top" alt="Banana Bread">
+                <div class="card h-100 border-warning shadow-sm rounded-3">
+                    <img src="https://www.simplyrecipes.com/thmb/6NhQKyjhBOmu4y0RXXHipugv0Q8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Easy-Banana-Bread-LEAD-2-66837beab63c495292d89743c6767171.jpg" class="card-img-top rounded-top" alt="Banana Bread">
                     <div class="card-body">
-                        <h5 class="card-title">Banana Bread Mix</h5>
+                        <h5 class="card-title fw-bold">Banana Bread Mix</h5>
                         <p class="card-text">Make the perfect banana bread with our premium mix.</p>
+                    </div>
+                    <div class="card-footer bg-transparent border-top-0">
+                        <a href="products.html" class="btn btn-sm btn-outline-warning">Learn More</a>
                     </div>
                 </div>
             </div>
