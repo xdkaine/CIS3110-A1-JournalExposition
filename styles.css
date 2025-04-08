@@ -101,17 +101,25 @@ body {
 
 /* Cards styling */
 .card {
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
-                box-shadow 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: none;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
 .card-img-top {
-    transition: transform 0.8s ease;
+    transition: opacity 0.3s ease, transform 0.8s ease;
     height: 200px;
     object-fit: cover;
+}
+
+.card-img-top:hover {
+    opacity: 0.9;
 }
 
 .card:hover .card-img-top {
@@ -324,13 +332,25 @@ footer a:hover::after {
     .reveal-on-scroll {
         opacity: 0;
         transform: translateY(30px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
+        transition: opacity 0.8s ease, transform 0.8s ease;
     }
 
     .reveal-on-scroll.revealed {
         opacity: 1;
         transform: translateY(0);
     }
+
+    .reveal-on-scroll.revealed-from-top {
+        opacity: 1;
+        transform: translateY(0);
+        animation: bounce 0.5s ease;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
 }
 
 /* Banana animations */
@@ -470,4 +490,19 @@ footer a:hover::after {
     50% { transform: translateY(0) rotate(0); }
     75% { transform: translateY(-5px) rotate(5deg); }
     100% { transform: translateY(0) rotate(0); }
+}
+
+/* Modal enhancements */
+#modalImage {
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.modal-content {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
 }
